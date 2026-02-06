@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .hero.custom-hero {
   background-color: #608647; /* tu color personalizado */
   color: #fff; /* texto blanco para contraste */
