@@ -11,3 +11,18 @@ html {
 .title.custom-tittle {
     color:#608647;
 }
+
+.navbar-item.custom-navbar-item:hover{
+    color:#608647;
+  
+}
+
+@media (min-width: 1024px) {
+.navbar-menu.custom-navbar{
+  background-color: #445f32;
+}
+
+  .navbar-brand.custom-brand{
+    background-color: #445f32;
+  }
+}

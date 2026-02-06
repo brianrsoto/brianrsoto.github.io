@@ -7,11 +7,41 @@
   <title>Brian R. Soto | Portafolio</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <link rel="stylesheet" href="./style.css">
+  <script src="./main.js"></script>
 
 </head>
 <body>
+
+  <!-- Navbar -->
+  <nav class="navbar is-fixed-top is-dark" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand custom-brand">
+      <a class="navbar-item" href="#main">
+        Brian R. Soto
+      </a>
+
+      <a role="button"
+        class="navbar-burger"
+        aria-label="menu"
+        aria-expanded="false"
+        data-target="mainNavbar">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="mainNavbar" class="navbar-menu custom-navbar">
+      <div class="navbar-end">
+        <a class="navbar-item custom-navbar-item" href="#sobremi">Sobre Mi</a>
+        <a class="navbar-item custom-navbar-item" href="#proyectos">Proyectos</a>
+        <a class="navbar-item custom-navbar-item" href="#habilidades">Habilidades</a>
+        <a class="navbar-item custom-navbar-item" href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
   <!-- Header / Hero -->
-  <section class="hero custom-hero is-primary is-medium">
+  <section class="hero custom-hero is-primary is-medium" id = "main">
     <div class="hero-body has-text-centered">
       <p class="title is-2">Brian R. Soto</p>
       <p class="subtitle is-4">
@@ -22,7 +52,7 @@
   </section>
 
   <!-- Sobre mí -->
-  <section class="section">
+  <section class="section" id="sobremi">
     <div class="container">
       <h2 class="title custom-tittle is-3">Sobre mí</h2>
       <p>
@@ -43,7 +73,7 @@
             <div class="card-content">
               <p class="title is-4">Sistema IoT de monitoreo</p>
               <p class="content">ESP32 → Python → SQL → Dashboard web.</p>
-              <figure class="image is-16by9"> <iframe class="has-ratio" src="https://www.youtube.com/embed/u31qwQUeGuM" allowfullscreen> </iframe> </figure>
+              <figure class="image is-16by9"> <iframe class="has-ratio" src="https://www.youtube.com/embed/u31qwQUeGuM" allowfullscreen loading="lazy"> </iframe> </figure>
             </div>
           </div>
         </div>
@@ -51,9 +81,9 @@
         <div class="column is-one-third">
           <div class="card">
             <div class="card-content">
-              <p class="title is-4">Dashboard de análisis de datos</p>
+              <p class="title is-4">Análisis de datos</p>
               <p class="content">Python, SQL y visualización interactiva.</p>
-              <figure class="image is-16by9"> <iframe class="has-ratio" src="https://www.youtube.com/embed/u31qwQUeGuM" allowfullscreen> </iframe> </figure>
+              <figure class="image is-16by9"> <iframe class="has-ratio" src="https://www.youtube.com/embed/u31qwQUeGuM" allowfullscreen loading="lazy">  </iframe> </figure>
             </div>
           </div>
         </div>
@@ -63,7 +93,7 @@
             <div class="card-content">
               <p class="title is-4">Automatización de tareas</p>
               <p class="content">Scripts para integraciones y reportes automáticos.</p>
-              <figure class="image is-16by9"> <iframe class="has-ratio" src="https://www.youtube.com/embed/u31qwQUeGuM" allowfullscreen> </iframe> </figure>
+              <figure class="image is-16by9"> <iframe class="has-ratio" src="https://www.youtube.com/embed/u31qwQUeGuM" allowfullscreen loading="lazy"> </iframe> </figure>
             </div>
           </div>
         </div>
@@ -73,7 +103,7 @@
   </section>
 
   <!-- Habilidades -->
-  <section class="section">
+  <section class="section" id="habilidades">
     <div class="container">
       <h2 class="title custom-tittle  is-3">Habilidades</h2>
       <div class="columns">
@@ -113,17 +143,18 @@
   </section>
 
   <!-- Contacto -->
-  <section class="section">
+  <section class="section" id="contacto">
     <div class="container has-text-centered">
       <h2 class="title custom-tittle is-3">Contacto</h2>
-      <p>Email: briansotozx@gmail.com</p>
-      <p>GitHub: <a href="https://github.com/brianrsoto">github.com/brianrsoto</a></p>
+      <p>Email: <a href="mailto:briansotozx@gmail.com">briansotozx@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/brianrsoto" target="_blank" rel="noopener noreferrer"> github.com/brianrsoto</a></p>
       <p>LinkedIn: <a href="#">linkedin.com/in/brianrsoto</a></p>
     </div>
   </section>
+  
+  <footer class="footer has-background-light has-text-centered">
+    <p>© 2026 Brian R. Soto. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
-<footer class="footer has-background-light has-text-centered">
-  <p>© 2026 Brian R. Soto. Todos los derechos reservados.</p>
-</footer>
 </html>
